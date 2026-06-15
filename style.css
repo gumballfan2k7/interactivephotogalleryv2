@@ -1,0 +1,50 @@
+body {
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #b3b3b3;
+    font-family: Arial, sans-serif;
+}
+
+#image {
+    line-height: 100px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    min-height: 150px;
+    border: 5px solid black;
+    margin: 20px auto;
+    background-color: #8e68ff;
+    font-size: 150%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Grid setup to clean up the display of 6 images */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.preview {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border: 5px solid black;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* CRITICAL FOR ACCESSIBILITY: Visible indicator for keyboard-tab focus */
+.preview:focus, .preview:hover {
+    transform: scale(1.05);
+    border-color: #8e68ff;
+    outline: 3px solid #000; /* Extra visibility border */
+}

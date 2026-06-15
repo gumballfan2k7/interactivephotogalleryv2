@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initializeGallery()">
+
+    <main>
+        <h1 id="image">Hover over an image below to display here.</h1>
+        
+        <div class="gallery-container">
+            <img class="preview" alt="Serene misty mountains at dawn" src="https://picsum.photos/id/10/800/600" onmouseover="upDate(this)" onmouseleave="undo()">
+            
+            <img class="preview" alt="A quiet path winding through a golden autumn forest" src="https://picsum.photos/id/15/800/600" onmouseover="upDate(this)" onmouseleave="undo()">
+            
+            <img class="preview" alt="Close-up of vibrant green tropical leaves" src="https://picsum.photos/id/28/800/600" onmouseover="upDate(this)" onmouseleave="undo()">
+            
+            <img class="preview" alt="Sunlight filtering through an ancient pine forest" src="https://picsum.photos/id/43/800/600" onmouseover="upDate(this)" onmouseleave="undo()">
+            
+            <img class="preview" alt="Calm ocean waves crashing gently on a sandy beach" src="https://picsum.photos/id/48/800/600" onmouseover="upDate(this)" onmouseleave="undo()">
+            
+            <img class="preview" alt="Snow-capped mountain peaks piercing the clouds" src="https://picsum.photos/id/57/800/600" onmouseover="upDate(this)" onmouseleave="undo()">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
